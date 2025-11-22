@@ -1,0 +1,33 @@
+* {
+    font-size: xx-large;
+    margin: 0px;
+    padding: 0px;
+}
+
+.main {
+    background-color: black;
+    color: white;
+    width: 25%;
+    margin: auto;
+    margin-top: 100px;
+    padding: 20px;
+
+    border-bottom: 10px solid goldenrod;
+    /* border: 20px solid greenyellow; */
+
+    /* border-color: gray;
+    border-width: 10px;
+    border-style: groove; */
+    /* border-radius: 100%; */
+    text-align: center;
+    /* box-shadow: 0px 0px 10px 20px rgb(114, 114, 193); */
+
+    /* margin-left: 250px; */
+    /* margin: 100px 200px; */
+    /* margin: 200px; */
+    /* margin: 100px 100px 100px 100px; */
+    /* margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 200px; */
+}
+
