@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: black;
+    color: white;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#abc {
+    object-fit: contain;
+    height: 80px;
+}
+
+body {
+    background-color: gray;
+    margin-bottom: 10px;
+}
+
+div>button {
+    width: 50%;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    font-size: medium;
+    padding: 7px;
+    border: 3px groove yellow;
+}
+
+button:hover {
+    background-color: navy;
+    color: white;
+    width: 60%;
+    transition: 1s;
+    transform: scale(1.1);
+    border-radius: 30px;
+    font-size: medium;
+    padding: 7px;
+    border: 3px groove red;
+    cursor: pointer;
+}
+
+
+.main {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.one,
+.two,
+.three {
+    border: 3px solid black;
+    width: 29%;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+div>img {
+    border-radius: 10px;
+    object-fit: contain;
+    height: 200px;
+    width: 100%;
+}
+
+@media screen and (max-width: 480px) {
+
+    
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: black;
+    color: white;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    padding-top: 0px;
+    /* align-items: center; */
+    /* justify-content: space-around; */
+}
+
+    .one,
+    .two,
+    .three {
+        border: 3px solid black;
+        width: 90%;
+        padding: 5px;
+        border-radius: 20px;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width:780px) {
+
+    .one,
+    .two,
+    .three {
+        border: 3px solid black;
+        width: 40%;
+        padding: 5px;
+        border-radius: 20px;
+    }
+
+    div>button {
+    width: 90%;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    font-size: medium;
+    padding: 7px;
+    border: 3px groove yellow;
+}
+
+}
