@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: rgb(63, 60, 60);
+    color: white;
+    font-size: large;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+.nav-link {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+
+#bloom {
+    font-family: cursive;
+    font-size: xx-large;
+}
+
+.section {
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: whitesmoke;
+}
+
+.sec-1 {
+    width: 40%;
+}
+
+.btn {
+    background-color: rgb(243, 177, 55);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.cards-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.sec-2>img {
+    width: 100%;
+}
+
+.card {
+    width: 25%;
+}
+
+.card>img {
+    width: 100%;
+}
+
+.footer {
+    display: flex;
+    background-color: rgb(63, 60, 60);
+    color: white;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.f-card {
+    width: 25%;
+}
+
+.footer-post {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.img {
+    width: 60%;
+}
+
+@media only screen and (max-width:700px)  {
+
+    .navbar {
+        background-color: rgb(63, 60, 60);
+        color: white;
+        font-size: large;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .nav-link {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        width: 50%;
+    }
+
+    .section {
+        display: flex;
+        padding: 20px;
+        background-color: whitesmoke;
+        flex-direction: column;
+    }
+
+    .sec-1 {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .cards-section {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        align-items: center;
+    }
+
+
+    .card {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+    
+    .footer {
+        display: flex;
+        color: white;
+        text-align: center;
+        background-color: rgb(63, 60, 60);
+        padding: 20px;
+        flex-direction: column;
+    }
+    
+    
+    .f-card {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
+

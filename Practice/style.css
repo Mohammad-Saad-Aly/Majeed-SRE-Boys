@@ -1,0 +1,35 @@
+body {
+    background-color: bisque;
+}
+
+.main {
+    display: flex;
+}
+img {
+    height: 100px;
+    width: 90px;
+    position: relative;
+    top: 20px;
+}
+
+
+/* img {
+    height: 100px;
+    width: 90px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    z-index: 1;
+} */
+
+.black {
+    background-color: black;
+    height: 100px;
+    width: 100px;
+}
+
+.white {
+    height: 100px;
+    width: 100px;
+    background-color: white;
+}

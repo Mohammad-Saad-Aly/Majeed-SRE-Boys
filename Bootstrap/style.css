@@ -1,0 +1,11 @@
+ul {
+    /* width: 90%; */
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card > img {
+    height: 450px;
+    object-fit: cover;
+}
