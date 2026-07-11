@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            display: inline-block;
+            width: 100px;
+            box-shadow: 10px 10px 10px black;
+
+        }
+
+        .main {
+            text-align: center;
+            border: 2px solid black;
+            padding: 20px;
+            width: 50%;
+            margin: auto;
+            box-shadow: 10px 10px 10px black;
+            border-radius: 30px;
+            margin-top: 100px;
+        }
+
+        button{
+            background-color: rgb(246, 117, 231);
+            width: 100px;
+            padding: 6px;
+            border-radius: 20px;
+            font-weight: bolder;
+            color: white;
+        }
+
+        h2{
+            box-shadow: 10px 10px 10px black;
+
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="main">
+        <div>
+            <h2>STOPWATCH JS</h2>
+        </div>
+
+        <div>
+            <h1 id="min">0</h1>
+            <h1 id="sec">0</h1>
+            <h1 id="msec">0</h1>
+        </div>
+
+        <div>
+            <button id="btn" onclick="start()">start</button>
+            <button onclick="stop()">stop</button>
+            <button onclick="reset()">reset</button>
+        </div>
+
+    </div>
+    
+
+    <script src="app.js"></script>
+</body>
+</html>

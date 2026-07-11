@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pink Signup Page</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #ffb6c1, #ffc0cb, #ffe4e1);
+        }
+
+        .signup-box {
+            background: white;
+            padding: 35px;
+            width: 350px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(255, 105, 180, 0.3);
+            text-align: center;
+        }
+
+        .signup-box h2 {
+            color: #ff4f9a;
+            margin-bottom: 20px;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ffd1dc;
+            border-radius: 10px;
+            outline: none;
+            font-size: 15px;
+        }
+
+        .input-group input:focus {
+            border-color: #ff69b4;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 10px;
+            background: #ff69b4;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #ff4f9a;
+        }
+
+        p {
+            margin-top: 15px;
+            color: #777;
+            font-size: 14px;
+        }
+
+        a {
+            color: #ff4f9a;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="signup-box">
+        <h2>💖 Sign Up 💖</h2>
+
+        <div>
+            <div class="input-group">
+                <input type="text" id="sname" placeholder="Your Name" required>
+            </div>
+
+            <div class="input-group">
+                <input type="email" id="semail" placeholder="Your Email" required>
+            </div>
+
+            <div class="input-group">
+                <input id="spass" type="password" placeholder="Password" required>
+            </div>
+
+            <button onclick="satti()" type="submit">Join Now ✨</button>
+        </div>
+
+        <p>Already have an account? <a href="#">Login</a></p>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="app.js"></script>
+
+</body>
+
+</html>

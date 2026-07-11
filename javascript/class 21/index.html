@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🐐 Bakra Eid Mubarak 🐄</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+body{
+
+    background:
+    linear-gradient(rgba(173, 24, 148, 0.651), rgba(174, 0, 0, 0.55)),
+    url('https://images.unsplash.com/photo-1513151233558-d860c5398176?q=80&w=1400&auto=format&fit=crop');
+
+    background-size:cover;
+    background-position:center;
+    min-height:100vh;
+    overflow-x:hidden;
+    color:white;
+}
+
+/* Floating Emojis */
+
+.emoji{
+    position:fixed;
+    font-size:40px;
+    animation:float 10s linear infinite;
+    opacity:0.9;
+    z-index:0;
+}
+
+@keyframes float{
+
+    0%{
+        transform:translateY(100vh) rotate(0deg);
+    }
+
+    100%{
+        transform:translateY(-120vh) rotate(360deg);
+    }
+
+}
+
+/* Main Container */
+
+.container{
+
+    width:90%;
+    max-width:900px;
+    margin:40px auto;
+    padding:35px;
+
+    background:rgba(255,255,255,0.12);
+    backdrop-filter:blur(12px);
+
+    border-radius:30px;
+
+    box-shadow:0 0 30px rgba(0,0,0,0.4);
+
+    position:relative;
+    z-index:2;
+
+    text-align:center;
+}
+
+/* Heading */
+
+h1{
+
+    font-size:65px;
+    color:#ffd166;
+
+    text-shadow:3px 3px 10px black;
+
+    margin-bottom:10px;
+}
+
+.subtitle{
+
+    font-size:26px;
+
+    margin-top:10px;
+}
+
+/* Animal Images */
+
+.animals{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:25px;
+    flex-wrap:wrap;
+
+    margin:35px 0;
+}
+
+.animals img{
+
+    width:190px;
+    height:190px;
+
+    object-fit:contain;
+
+    background:white;
+
+    padding:10px;
+
+    border-radius:25px;
+
+    border:5px dashed #ffd166;
+
+    box-shadow:0 0 20px rgba(255,255,255,0.4);
+
+    transition:0.4s;
+}
+
+.animals img:hover{
+
+    transform:scale(1.12) rotate(5deg);
+}
+
+/* Fun Box */
+
+.fun-box{
+
+    background:#ffdf6b;
+
+    color:#222;
+
+    padding:20px;
+
+    border-radius:20px;
+
+    font-size:30px;
+
+    font-weight:bold;
+
+    box-shadow:0 0 15px rgba(255,223,107,0.5);
+}
+
+/* Blinking Text */
+
+.click-text{
+
+    margin-top:20px;
+
+    font-size:30px;
+
+    font-weight:bold;
+
+    color:#fff176;
+
+    text-shadow:2px 2px 5px black;
+
+    animation:blink 1.5s infinite;
+}
+
+@keyframes blink{
+
+    0%{
+        opacity:1;
+    }
+
+    50%{
+        opacity:0.4;
+    }
+
+    100%{
+        opacity:1;
+    }
+}
+
+/* Buttons */
+
+.buttons{
+
+    margin-top:30px;
+
+    display:flex;
+    justify-content:center;
+    gap:20px;
+
+    flex-wrap:wrap;
+}
+
+button{
+
+    padding:18px 30px;
+
+    border:none;
+
+    border-radius:18px;
+
+    font-size:22px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+.yes1{
+
+    background:#00c853;
+
+    color:white;
+}
+
+.yes2{
+
+    background:#ff4081;
+
+    color:white;
+}
+
+button:hover{
+
+    transform:scale(1.12);
+}
+
+/* Account Box */
+
+.account-box{
+
+    display:none;
+
+    margin-top:35px;
+
+    background:white;
+
+    color:#14532d;
+
+    padding:30px;
+
+    border-radius:25px;
+
+    animation:pop 0.7s ease;
+}
+
+@keyframes pop{
+
+    from{
+
+        transform:scale(0.7);
+
+        opacity:0;
+    }
+
+    to{
+
+        transform:scale(1);
+
+        opacity:1;
+    }
+}
+
+.account-box h2{
+
+    color:#198754;
+
+    margin-bottom:20px;
+
+    font-size:35px;
+}
+
+.info{
+
+    font-size:22px;
+
+    margin:15px 0;
+
+    font-weight:bold;
+}
+
+/* Copy Button */
+
+.copy-btn{
+
+    margin-top:20px;
+
+    background:#198754;
+
+    color:white;
+}
+
+.copy-btn:hover{
+
+    background:#0f5132;
+}
+
+/* Funny Warning */
+
+.warning{
+
+    margin-top:35px;
+
+    background:#ffcccb;
+
+    color:#8b0000;
+
+    padding:25px;
+
+    border-radius:25px;
+
+    font-size:22px;
+
+    line-height:1.8;
+
+    font-weight:bold;
+
+    box-shadow:0 0 20px rgba(255,204,203,0.5);
+}
+
+/* Footer */
+
+.footer{
+
+    margin-top:30px;
+
+    font-size:22px;
+
+    color:#fff;
+}
+
+/* Responsive */
+
+@media(max-width:700px){
+
+    h1{
+        font-size:42px;
+    }
+
+    .animals img{
+
+        width:140px;
+        height:140px;
+    }
+
+    .fun-box{
+        font-size:24px;
+    }
+
+    .click-text{
+        font-size:22px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Floating Emojis -->
+
+<div class="emoji" style="left:5%; animation-delay:0s;">💸</div>
+
+<div class="emoji" style="left:18%; animation-delay:3s;">🐐</div>
+
+<div class="emoji" style="left:35%; animation-delay:1s;">🐄</div>
+
+<div class="emoji" style="left:52%; animation-delay:4s;">🎉</div>
+
+<div class="emoji" style="left:70%; animation-delay:2s;">💰</div>
+
+<div class="emoji" style="left:88%; animation-delay:5s;">🌙</div>
+
+<!-- Main Container -->
+
+<div class="container">
+
+    <h1>Eidi first, Eid Mubarak later</h1>
+    <h2>❤️Certified Bakra Greetings by Iqra.❤️</h2>
+
+    <div class="subtitle">
+
+        Eid • BBQ • Biryani • Unlimited Eidi 😎
+
+    </div>
+
+    <!-- Funny Animal Images -->
+
+    <div class="animals">
+
+        <img src="https://i.pinimg.com/736x/14/59/4a/14594a80316af785b91e1b202db91823.jpg" alt="Funny Goat">
+
+        <img src="https://photos.hamariweb.com/photos/Bakra-Eid-Main-bach-gaya-3816.jpg" alt="Cute Sheep">
+
+        <img src="https://i.tribune.com.pk/media/images/29616-ddas-1443082227/29616-ddas-1443082227.jpg" alt="Funny Cow">
+
+    </div>
+
+    <!-- Fun Box -->
+
+    <div class="fun-box">
+
+        😎 Your wallet called… it said send Iqra some Eidi. Would you like to make me even happier?😎
+
+    </div>
+
+    <!-- Click Text -->
+
+    <div class="click-text">
+
+        👇 Click here for the worlds most exciting account number or
+        CLICK HERE IF NUMBERS TURN YOU ON 😂💸👇
+
+    </div>
+
+    <!-- Buttons -->
+
+    <div class="buttons">
+
+        <button class="yes1" onclick="showAccount()">
+
+            YES OF COURSE 💸
+
+        </button>
+
+        <button class="yes2" onclick="showAccount()">
+
+            DEFINITELY YES 😂
+
+        </button>
+
+    </div>
+
+    <!-- Account Details -->
+
+    <div class="account-box" id="accountBox">
+
+        <h2>🎁 💵TRANSFER EIDI HERE💵 🎁</h2>
+
+        <div class="info">
+
+            🏦 Bank: UBL (United Bank Limited)
+
+        </div>
+
+        <div class="info">
+
+            👤 Account Title: Iqra Irshad
+
+        </div>
+
+        <div class="info" id="accNo">
+
+            💳 Account Number: 1219321394105
+
+        </div>
+
+        <button class="copy-btn" onclick="copyAccount()">
+
+            📋 COPY ACCOUNT NUMBER
+
+        </button>
+
+        <div style="margin-top:20px; font-size:20px;">
+
+            😂 One Click Closer To Making My Eid Happier 💖
+
+        </div>
+
+    </div>
+
+    <!-- Funny Warning -->
+
+    <div class="warning">
+
+        ⚠️ IF YOU DON'T SEND ME EIDI... ⚠️ <br><br>
+
+        🌶️ Your Biryani Will Always Have Extra Mirchi <br>
+
+        📶 Your WiFi Will Become Slow During Netflix Time <br>
+
+        🐐 Your Eid pics will be taken at the worst possible angle. <br>
+
+        🍗 Your BBQ Pieces Will Burn First <br>
+
+        😭 Cousins ate your Eidi 💀 <br>
+
+        😂 And I’ll Tell Everyone You Are <b>KANJOOOSSS!!!</b>
+
+    </div>
+
+    <!-- Footer -->
+
+    <div class="footer">
+
+        ❤️ SEND EIDI, STAY BLESSED & STAY IN MY GOOD BOOKS 😎
+
+    </div>
+
+</div>
+
+<script>
+
+/* Show Account Box */
+
+function showAccount(){
+
+    document.getElementById("accountBox").style.display = "block";
+
+    alert("HAHA 😄 Good Choice! Now Send Eidi 💸");
+}
+
+/* Copy Account Number */
+
+function copyAccount(){
+
+    navigator.clipboard.writeText("1219321394105");
+
+    alert("✅ Account Number Copied Successfully!");
+}
+
+</script>
+
+</body>
+</html>
+
+
+</body>
+</html>
